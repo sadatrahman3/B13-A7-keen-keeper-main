@@ -6,7 +6,7 @@ import {
   Routes,
 } from 'react-router-dom'
 
-// Layout & Pages
+
 import Header from './components/Header'
 import Footer from './components/Footer'
 import HomePage from './components/HomePage'
@@ -16,15 +16,12 @@ import StatsPage from './components/StatsPage'
 import NotFoundPage from './components/NotFoundPage'
 import ToastStack from './components/ToastStack'
 
-// Essential Assets
+
 import logoIcon from './assets/logo.png' 
 
 import './App.css'
 
-// --- Configuration & Helpers ---
 
-// If you don't have these files, I'm setting them to empty strings 
-// so the app doesn't crash. Replace with actual imports if you have the files.
 const callIcon = ""; 
 const textIcon = "";
 const videoIcon = "";
@@ -63,8 +60,6 @@ function readStoredTimeline() {
     return fallback
   }
 }
-
-// --- Main App Component ---
 
 function App() {
   const [friends, setFriends] = useState([])
