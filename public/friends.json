@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Ava Martinez",
+    "picture": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
+    "email": "ava.martinez@example.com",
+    "days_since_contact": 19,
+    "status": "overdue",
+    "tags": ["college", "travel buddy"],
+    "bio": "We met during our first year at university and still plan a weekend trip every autumn when schedules finally line up.",
+    "goal": 14,
+    "next_due_date": "2026-04-10"
+  },
+  {
+    "id": 2,
+    "name": "Maya Thompson",
+    "picture": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=400&q=80",
+    "email": "maya.thompson@example.com",
+    "days_since_contact": 8,
+    "status": "on-track",
+    "tags": ["coworker", "coffee walks"],
+    "bio": "Maya and I worked through two launch cycles together, and now we use short voice notes to stay connected outside the office.",
+    "goal": 10,
+    "next_due_date": "2026-04-19"
+  },
+  {
+    "id": 3,
+    "name": "Noah Patel",
+    "picture": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+    "email": "noah.patel@example.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["gym", "accountability"],
+    "bio": "Noah is my early-morning training partner, and we usually catch up over a quick call after our midweek workout.",
+    "goal": 14,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 4,
+    "name": "Daniel Brooks",
+    "picture": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=400&q=80",
+    "email": "daniel.brooks@example.com",
+    "days_since_contact": 23,
+    "status": "overdue",
+    "tags": ["former teammate", "soccer"],
+    "bio": "Daniel moved to another city last year, so regular calls help us keep our running joke-filled friendship feeling current.",
+    "goal": 14,
+    "next_due_date": "2026-04-05"
+  },
+  {
+    "id": 5,
+    "name": "Sofia Chen",
+    "picture": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?auto=format&fit=crop&w=400&q=80",
+    "email": "sofia.chen@example.com",
+    "days_since_contact": 6,
+    "status": "on-track",
+    "tags": ["neighbor", "book club"],
+    "bio": "Sofia lives two floors down, and we swap book recommendations and last-minute dinner invites whenever life gets hectic.",
+    "goal": 12,
+    "next_due_date": "2026-04-23"
+  },
+  {
+    "id": 6,
+    "name": "Ethan Walker",
+    "picture": "https://images.unsplash.com/photo-1507591064344-4c6ce005b128?auto=format&fit=crop&w=400&q=80",
+    "email": "ethan.walker@example.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["mentor", "career advice"],
+    "bio": "Ethan has been my sounding board since my internship days, and he never misses a chance to ask thoughtful follow-up questions.",
+    "goal": 15,
+    "next_due_date": "2026-04-20"
+  },
+  {
+    "id": 7,
+    "name": "Leila Hassan",
+    "picture": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=400&q=80",
+    "email": "leila.hassan@example.com",
+    "days_since_contact": 4,
+    "status": "on-track",
+    "tags": ["cousin", "family"],
+    "bio": "Leila keeps the family group chat alive, and we make time for a longer video catch-up at least twice a month.",
+    "goal": 14,
+    "next_due_date": "2026-04-27"
+  },
+  {
+    "id": 8,
+    "name": "Marcus Reed",
+    "picture": "https://images.unsplash.com/photo-1504257432389-52343af06ae3?auto=format&fit=crop&w=400&q=80",
+    "email": "marcus.reed@example.com",
+    "days_since_contact": 16,
+    "status": "almost due",
+    "tags": ["startup", "brainstorming"],
+    "bio": "Marcus and I met at a product meetup, and our best conversations usually happen during long weekend voice calls about ideas.",
+    "goal": 18,
+    "next_due_date": "2026-04-18"
+  }
+]
