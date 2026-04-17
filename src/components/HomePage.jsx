@@ -11,11 +11,11 @@ function HomePage({ friends, loading }) {
   return (
     <div className="page-stack">
       <section className="hero-card">
-        <div className="hero-card__eyebrow">Friendships deserve follow-through</div>
-        <h1>Keep the people you care about closer, longer.</h1>
+        
+        <h1>Friends to keep close in your life</h1>
         <p className="hero-card__copy">
-          Track when you last checked in, spot overdue friendships early, and
-          stay consistent with the relationships that matter most.
+          Your personal shelf of meaningful connections. Browse, tend, and nurture the
+          relationships that matter most.
         </p>
         <button type="button" className="primary-button">
           <img src={logoIcon} alt="" />
