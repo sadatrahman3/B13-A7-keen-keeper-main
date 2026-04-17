@@ -94,5 +94,53 @@
     "bio": "Marcus and I met at a product meetup, and our best conversations usually happen during long weekend voice calls about ideas.",
     "goal": 18,
     "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 9,
+    "name": "Chloe Simmons",
+    "picture": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+    "email": "chloe.s@example.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": ["gaming", "discord"],
+    "bio": "We usually squad up on weekends. She's the best healer I know and a great listener when things get stressful at work.",
+    "goal": 7,
+    "next_due_date": "2026-04-22"
+  },
+  {
+    "id": 10,
+    "name": "James O'Connor",
+    "picture": "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=400&q=80",
+    "email": "james.oc@example.com",
+    "days_since_contact": 30,
+    "status": "overdue",
+    "tags": ["high school", "old friend"],
+    "bio": "Life got busy for both of us, but every time we talk, it feels like no time has passed. I really need to reach out soon.",
+    "goal": 21,
+    "next_due_date": "2026-04-01"
+  },
+  {
+    "id": 11,
+    "name": "Elena Rodriguez",
+    "picture": "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80",
+    "email": "elena.rod@example.com",
+    "days_since_contact": 9,
+    "status": "almost due",
+    "tags": ["photography", "hiking"],
+    "bio": "Elena shares my love for golden hour shots. We try to hit a new trail once a month to practice our landscape skills.",
+    "goal": 10,
+    "next_due_date": "2026-04-18"
+  },
+  {
+    "id": 12,
+    "name": "Liam Vance",
+    "picture": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=400&q=80",
+    "email": "liam.vance@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["tech", "coding"],
+    "bio": "Liam is my go-to for debugging marathons. We've spent countless nights over Discord fixing 'one last bug' together.",
+    "goal": 7,
+    "next_due_date": "2026-04-19"
   }
 ]

@@ -4,46 +4,29 @@ import textIcon from '../assets/text.png'
 import videoIcon from '../assets/video.png'
 
 const statusMeta = {
-  overdue: {
-    label: 'Overdue',
-    className: 'status-overdue',
-  },
-  'almost due': {
-    label: 'Almost Due',
-    className: 'status-almost-due',
-  },
-  'on-track': {
-    label: 'On Track',
-    className: 'status-on-track',
-  },
-}
-
-const actionIcons = {
-  call: callIcon,
-  text: textIcon,
-  video: videoIcon,
+  overdue: { label: 'Overdue', className: 'status-overdue' },
+  'almost due': { label: 'Almost Due', className: 'status-almost-due' },
+  'on-track': { label: 'On Track', className: 'status-on-track' },
 }
 
 function FriendDetailsPage({ friends, loading, onQuickCheckIn }) {
   const { friendId } = useParams()
   const navigate = useNavigate()
+  
+  // Finds the specific friend from your 12 entries
   const friend = friends.find((entry) => entry.id === Number(friendId))
 
-  if (loading) {
-    return <LoadingState expanded />
-  }
+  if (loading) return <LoadingState expanded />
+  if (!friend) return <NotFoundCard />
 
-  if (!friend) {
-    return <NotFoundCard />
-  }
-
-  const status = statusMeta[friend.status]
+  // Fallback to 'on-track' if status is missing/mismatched
+  const status = statusMeta[friend.status] || statusMeta['on-track']
 
   return (
     <div className="details-layout">
       <section className="details-sidebar">
         <button type="button" className="ghost-button" onClick={() => navigate(-1)}>
-          Back
+          &larr; Back
         </button>
 
         <article className="profile-card">
@@ -55,9 +38,7 @@ function FriendDetailsPage({ friends, loading, onQuickCheckIn }) {
 
           <div className="tag-row">
             {friend.tags.map((tag) => (
-              <span key={tag} className="tag-chip">
-                {tag}
-              </span>
+              <span key={tag} className="tag-chip">{tag}</span>
             ))}
           </div>
 
@@ -69,15 +50,9 @@ function FriendDetailsPage({ friends, loading, onQuickCheckIn }) {
           </div>
 
           <div className="profile-actions">
-            <button type="button" className="muted-button">
-              Snooze 2 Weeks
-            </button>
-            <button type="button" className="muted-button">
-              Archive
-            </button>
-            <button type="button" className="danger-button">
-              Delete
-            </button>
+            <button type="button" className="muted-button">Snooze</button>
+            <button type="button" className="muted-button">Archive</button>
+            <button type="button" className="danger-button">Delete</button>
           </div>
         </article>
       </section>
@@ -95,13 +70,11 @@ function FriendDetailsPage({ friends, loading, onQuickCheckIn }) {
               <p className="section-heading__eyebrow">Relationship Goal</p>
               <h2>Stay in touch every {friend.goal} days</h2>
             </div>
-            <button type="button" className="ghost-button">
-              Edit
-            </button>
+            <button type="button" className="ghost-button">Edit</button>
           </div>
           <p>
-            Keep a steady rhythm with {friend.name.split(' ')[0]} so the friendship
-            feels warm, current, and easy to maintain.
+            Keeping a steady rhythm with {friend.name.split(' ')[0]} helps ensure 
+            this connection stays meaningful and easy to maintain.
           </p>
         </article>
 
@@ -148,7 +121,7 @@ function MetricCard({ label, value }) {
 function ActionButton({ label, icon, onClick }) {
   return (
     <button type="button" className="action-button" onClick={onClick}>
-      <img src={icon} alt="" />
+      <img src={icon} alt="" style={{ width: '24px', height: '24px' }} />
       <span>{label}</span>
     </button>
   )
@@ -158,7 +131,7 @@ function LoadingState({ expanded = false }) {
   return (
     <div className={`loading-card ${expanded ? 'loading-card--expanded' : ''}`}>
       <div className="spinner" />
-      <p>Loading your friendship dashboard...</p>
+      <p>Syncing your friendship data...</p>
     </div>
   )
 }
@@ -168,7 +141,7 @@ function NotFoundCard() {
     <div className="not-found-page">
       <div className="loading-card">
         <h2>👤 Friend Not Found</h2>
-        <p>This friend doesn't exist in your contacts.</p>
+        <p>We couldn't find this person in your 12 active contacts.</p>
       </div>
     </div>
   )
