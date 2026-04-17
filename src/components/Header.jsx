@@ -36,12 +36,26 @@ const navItems = [
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false)
 
+  // Style to prevent logo compression
+  const logoStyle = {
+    height: '32px', // Adjust this value to match your header height
+    width: 'auto',
+    objectFit: 'contain',
+    display: 'block'
+  }
+
   return (
     <header className="site-header">
       <div className="site-header__inner">
-        <Link to="/" className="brand" aria-label="KeenKeeper home" onClick={() => setMenuOpen(false)}>
-          <img src={logoIcon} alt="" className="brand__mark" />
-          <img src={logoWordmark} alt="KeenKeeper" className="brand__wordmark" />
+        <Link 
+          to="/" 
+          className="brand" 
+          aria-label="KeenKeeper home" 
+          onClick={() => setMenuOpen(false)}
+          style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none' }}
+        >
+          <img src={logoIcon} alt="" className="brand__mark" style={logoStyle} />
+          <img src={logoWordmark} alt="KeenKeeper" className="brand__wordmark" style={logoStyle} />
         </Link>
 
         <button
