@@ -18,8 +18,7 @@ function HomePage({ friends, loading }) {
           relationships that matter most.
         </p>
         <button type="button" className="primary-button">
-          <img src={logoIcon} alt="" />
-          Add a Friend
+          +  Add a Friend
         </button>
 
         <div className="summary-grid">
